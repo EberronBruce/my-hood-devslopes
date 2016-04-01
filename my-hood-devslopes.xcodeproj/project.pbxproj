@@ -14,6 +14,8 @@
 		7ADCB0901CAE3646007DBE02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADCB08E1CAE3646007DBE02 /* LaunchScreen.storyboard */; };
 		7ADCB0991CAE3D8D007DBE02 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCB0981CAE3D8D007DBE02 /* Post.swift */; };
 		7ADCB09C1CAE4E14007DBE02 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCB09B1CAE4E14007DBE02 /* PostCell.swift */; };
+		7ADCB09F1CAE5A17007DBE02 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCB09E1CAE5A17007DBE02 /* AddPostVC.swift */; };
+		7ADCB0A21CAE6C5D007DBE02 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCB0A11CAE6C5D007DBE02 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7ADCB0911CAE3646007DBE02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ADCB0981CAE3D8D007DBE02 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7ADCB09B1CAE4E14007DBE02 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		7ADCB09E1CAE5A17007DBE02 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		7ADCB0A11CAE6C5D007DBE02 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,12 @@
 		7ADCB0841CAE3646007DBE02 /* my-hood-devslopes */ = {
 			isa = PBXGroup;
 			children = (
-				7ADCB09A1CAE4DE9007DBE02 /* View */,
+				7ADCB0A01CAE6C4B007DBE02 /* Services */,
 				7ADCB0971CAE3D7B007DBE02 /* Model */,
+				7ADCB09A1CAE4DE9007DBE02 /* View */,
+				7ADCB09D1CAE59E0007DBE02 /* Controller */,
 				7ADCB0851CAE3646007DBE02 /* AppDelegate.swift */,
-				7ADCB0871CAE3646007DBE02 /* ViewController.swift */,
-				7ADCB0891CAE3646007DBE02 /* Main.storyboard */,
 				7ADCB08C1CAE3646007DBE02 /* Assets.xcassets */,
-				7ADCB08E1CAE3646007DBE02 /* LaunchScreen.storyboard */,
 				7ADCB0911CAE3646007DBE02 /* Info.plist */,
 			);
 			path = "my-hood-devslopes";
@@ -81,9 +84,28 @@
 		7ADCB09A1CAE4DE9007DBE02 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7ADCB08E1CAE3646007DBE02 /* LaunchScreen.storyboard */,
+				7ADCB0891CAE3646007DBE02 /* Main.storyboard */,
 				7ADCB09B1CAE4E14007DBE02 /* PostCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		7ADCB09D1CAE59E0007DBE02 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7ADCB0871CAE3646007DBE02 /* ViewController.swift */,
+				7ADCB09E1CAE5A17007DBE02 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7ADCB0A01CAE6C4B007DBE02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7ADCB0A11CAE6C5D007DBE02 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +181,8 @@
 			files = (
 				7ADCB0991CAE3D8D007DBE02 /* Post.swift in Sources */,
 				7ADCB0881CAE3646007DBE02 /* ViewController.swift in Sources */,
+				7ADCB09F1CAE5A17007DBE02 /* AddPostVC.swift in Sources */,
+				7ADCB0A21CAE6C5D007DBE02 /* DataService.swift in Sources */,
 				7ADCB0861CAE3646007DBE02 /* AppDelegate.swift in Sources */,
 				7ADCB09C1CAE4E14007DBE02 /* PostCell.swift in Sources */,
 			);
